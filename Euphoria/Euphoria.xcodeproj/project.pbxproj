@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4822B12528E488B900BF7018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822B12428E488B900BF7018 /* AppDelegate.swift */; };
+		4822B12728E488B900BF7018 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822B12628E488B900BF7018 /* SceneDelegate.swift */; };
+		4822B12928E488B900BF7018 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822B12828E488B900BF7018 /* TabBarViewController.swift */; };
+		4822B12C28E488B900BF7018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4822B12A28E488B900BF7018 /* Main.storyboard */; };
+		4822B12E28E488B900BF7018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4822B12D28E488B900BF7018 /* Assets.xcassets */; };
+		4822B13128E488B900BF7018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4822B12F28E488B900BF7018 /* LaunchScreen.storyboard */; };
+		4822B13C28E488B900BF7018 /* EuphoriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822B13B28E488B900BF7018 /* EuphoriaTests.swift */; };
+		4822B14628E488B900BF7018 /* EuphoriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822B14528E488B900BF7018 /* EuphoriaUITests.swift */; };
+		4822B14828E488B900BF7018 /* EuphoriaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822B14728E488B900BF7018 /* EuphoriaUITestsLaunchTests.swift */; };
+		48CF9C1928EC78EA004088F1 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C1828EC78EA004088F1 /* AuthManager.swift */; };
+		48CF9C1B28EC790C004088F1 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C1A28EC790C004088F1 /* APICaller.swift */; };
+		48CF9C1D28EC7949004088F1 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C1C28EC7949004088F1 /* HapticsManager.swift */; };
+		48CF9C1F28EC7A1E004088F1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C1E28EC7A1E004088F1 /* User.swift */; };
+		48CF9C2128EC7AE1004088F1 /* GenericImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C2028EC7AE1004088F1 /* GenericImage.swift */; };
+		48CF9C2428EC7CF5004088F1 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C2328EC7CF5004088F1 /* GradientBackground.swift */; };
+		48CF9C2828EC7F22004088F1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C2728EC7F22004088F1 /* SearchViewController.swift */; };
+		48CF9C2A28EC8094004088F1 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C2928EC8094004088F1 /* Genre.swift */; };
+		48CF9C2D28EC81B2004088F1 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C2C28EC81B2004088F1 /* SearchCollectionViewCell.swift */; };
+		48CF9C2F28EC81D9004088F1 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C2E28EC81D9004088F1 /* BaseCollectionViewCell.swift */; };
+		48CF9C3128EC8228004088F1 /* CollectionCellDecoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C3028EC8228004088F1 /* CollectionCellDecoration.swift */; };
+		48CF9C3328EC8453004088F1 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C3228EC8453004088F1 /* SearchResultViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4822B13828E488B900BF7018 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4822B11928E488B900BF7018 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4822B12028E488B900BF7018;
+			remoteInfo = Euphoria;
+		};
+		4822B14228E488B900BF7018 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4822B11928E488B900BF7018 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4822B12028E488B900BF7018;
+			remoteInfo = Euphoria;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4822B12128E488B900BF7018 /* Euphoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euphoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4822B12428E488B900BF7018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4822B12628E488B900BF7018 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4822B12828E488B900BF7018 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4822B12B28E488B900BF7018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4822B12D28E488B900BF7018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4822B13028E488B900BF7018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4822B13228E488B900BF7018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4822B13728E488B900BF7018 /* EuphoriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EuphoriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4822B13B28E488B900BF7018 /* EuphoriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuphoriaTests.swift; sourceTree = "<group>"; };
+		4822B14128E488B900BF7018 /* EuphoriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EuphoriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4822B14528E488B900BF7018 /* EuphoriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuphoriaUITests.swift; sourceTree = "<group>"; };
+		4822B14728E488B900BF7018 /* EuphoriaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuphoriaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		48CF9C1828EC78EA004088F1 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		48CF9C1A28EC790C004088F1 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		48CF9C1C28EC7949004088F1 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		48CF9C1E28EC7A1E004088F1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		48CF9C2028EC7AE1004088F1 /* GenericImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericImage.swift; sourceTree = "<group>"; };
+		48CF9C2328EC7CF5004088F1 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
+		48CF9C2728EC7F22004088F1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		48CF9C2928EC8094004088F1 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		48CF9C2C28EC81B2004088F1 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		48CF9C2E28EC81D9004088F1 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		48CF9C3028EC8228004088F1 /* CollectionCellDecoration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellDecoration.swift; sourceTree = "<group>"; };
+		48CF9C3228EC8453004088F1 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4822B11E28E488B900BF7018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4822B13428E488B900BF7018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4822B13E28E488B900BF7018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4822B11828E488B900BF7018 = {
+			isa = PBXGroup;
+			children = (
+				4822B12328E488B900BF7018 /* Euphoria */,
+				4822B13A28E488B900BF7018 /* EuphoriaTests */,
+				4822B14428E488B900BF7018 /* EuphoriaUITests */,
+				4822B12228E488B900BF7018 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4822B12228E488B900BF7018 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4822B12128E488B900BF7018 /* Euphoria.app */,
+				4822B13728E488B900BF7018 /* EuphoriaTests.xctest */,
+				4822B14128E488B900BF7018 /* EuphoriaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4822B12328E488B900BF7018 /* Euphoria */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9C2228EC7CCB004088F1 /* Interfaces */,
+				48CF9C1728EC7744004088F1 /* Resources */,
+				48CF9C1628EC772F004088F1 /* Managers */,
+				48CF9C1528EC7728004088F1 /* ViewModels */,
+				48CF9C1428EC7720004088F1 /* Models */,
+				48CF9C1328EC770E004088F1 /* Controllers */,
+				48CF9C1228EC7706004088F1 /* Views */,
+				4822B12A28E488B900BF7018 /* Main.storyboard */,
+				4822B13228E488B900BF7018 /* Info.plist */,
+			);
+			path = Euphoria;
+			sourceTree = "<group>";
+		};
+		4822B13A28E488B900BF7018 /* EuphoriaTests */ = {
+			isa = PBXGroup;
+			children = (
+				4822B13B28E488B900BF7018 /* EuphoriaTests.swift */,
+			);
+			path = EuphoriaTests;
+			sourceTree = "<group>";
+		};
+		4822B14428E488B900BF7018 /* EuphoriaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4822B14528E488B900BF7018 /* EuphoriaUITests.swift */,
+				4822B14728E488B900BF7018 /* EuphoriaUITestsLaunchTests.swift */,
+			);
+			path = EuphoriaUITests;
+			sourceTree = "<group>";
+		};
+		48CF9C1228EC7706004088F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9C2B28EC817B004088F1 /* Search */,
+				4822B12F28E488B900BF7018 /* LaunchScreen.storyboard */,
+				48CF9C2E28EC81D9004088F1 /* BaseCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48CF9C1328EC770E004088F1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9C2628EC7DDC004088F1 /* Other */,
+				48CF9C2528EC7DD7004088F1 /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		48CF9C1428EC7720004088F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9C1E28EC7A1E004088F1 /* User.swift */,
+				48CF9C2028EC7AE1004088F1 /* GenericImage.swift */,
+				48CF9C2928EC8094004088F1 /* Genre.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48CF9C1528EC7728004088F1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		48CF9C1628EC772F004088F1 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9C1828EC78EA004088F1 /* AuthManager.swift */,
+				48CF9C1A28EC790C004088F1 /* APICaller.swift */,
+				48CF9C1C28EC7949004088F1 /* HapticsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		48CF9C1728EC7744004088F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4822B12D28E488B900BF7018 /* Assets.xcassets */,
+				4822B12428E488B900BF7018 /* AppDelegate.swift */,
+				4822B12628E488B900BF7018 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		48CF9C2228EC7CCB004088F1 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9C2328EC7CF5004088F1 /* GradientBackground.swift */,
+				48CF9C3028EC8228004088F1 /* CollectionCellDecoration.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		48CF9C2528EC7DD7004088F1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4822B12828E488B900BF7018 /* TabBarViewController.swift */,
+				48CF9C2728EC7F22004088F1 /* SearchViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		48CF9C2628EC7DDC004088F1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9C3228EC8453004088F1 /* SearchResultViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		48CF9C2B28EC817B004088F1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9C2C28EC81B2004088F1 /* SearchCollectionViewCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4822B12028E488B900BF7018 /* Euphoria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4822B14B28E488B900BF7018 /* Build configuration list for PBXNativeTarget "Euphoria" */;
+			buildPhases = (
+				4822B11D28E488B900BF7018 /* Sources */,
+				4822B11E28E488B900BF7018 /* Frameworks */,
+				4822B11F28E488B900BF7018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Euphoria;
+			productName = Euphoria;
+			productReference = 4822B12128E488B900BF7018 /* Euphoria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4822B13628E488B900BF7018 /* EuphoriaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4822B14E28E488B900BF7018 /* Build configuration list for PBXNativeTarget "EuphoriaTests" */;
+			buildPhases = (
+				4822B13328E488B900BF7018 /* Sources */,
+				4822B13428E488B900BF7018 /* Frameworks */,
+				4822B13528E488B900BF7018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4822B13928E488B900BF7018 /* PBXTargetDependency */,
+			);
+			name = EuphoriaTests;
+			productName = EuphoriaTests;
+			productReference = 4822B13728E488B900BF7018 /* EuphoriaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4822B14028E488B900BF7018 /* EuphoriaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4822B15128E488B900BF7018 /* Build configuration list for PBXNativeTarget "EuphoriaUITests" */;
+			buildPhases = (
+				4822B13D28E488B900BF7018 /* Sources */,
+				4822B13E28E488B900BF7018 /* Frameworks */,
+				4822B13F28E488B900BF7018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4822B14328E488B900BF7018 /* PBXTargetDependency */,
+			);
+			name = EuphoriaUITests;
+			productName = EuphoriaUITests;
+			productReference = 4822B14128E488B900BF7018 /* EuphoriaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4822B11928E488B900BF7018 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					4822B12028E488B900BF7018 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					4822B13628E488B900BF7018 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4822B12028E488B900BF7018;
+					};
+					4822B14028E488B900BF7018 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4822B12028E488B900BF7018;
+					};
+				};
+			};
+			buildConfigurationList = 4822B11C28E488B900BF7018 /* Build configuration list for PBXProject "Euphoria" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4822B11828E488B900BF7018;
+			productRefGroup = 4822B12228E488B900BF7018 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4822B12028E488B900BF7018 /* Euphoria */,
+				4822B13628E488B900BF7018 /* EuphoriaTests */,
+				4822B14028E488B900BF7018 /* EuphoriaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4822B11F28E488B900BF7018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4822B13128E488B900BF7018 /* LaunchScreen.storyboard in Resources */,
+				4822B12E28E488B900BF7018 /* Assets.xcassets in Resources */,
+				4822B12C28E488B900BF7018 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4822B13528E488B900BF7018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4822B13F28E488B900BF7018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4822B11D28E488B900BF7018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CF9C2828EC7F22004088F1 /* SearchViewController.swift in Sources */,
+				48CF9C3128EC8228004088F1 /* CollectionCellDecoration.swift in Sources */,
+				48CF9C1D28EC7949004088F1 /* HapticsManager.swift in Sources */,
+				48CF9C2D28EC81B2004088F1 /* SearchCollectionViewCell.swift in Sources */,
+				4822B12928E488B900BF7018 /* TabBarViewController.swift in Sources */,
+				48CF9C2A28EC8094004088F1 /* Genre.swift in Sources */,
+				48CF9C1928EC78EA004088F1 /* AuthManager.swift in Sources */,
+				48CF9C3328EC8453004088F1 /* SearchResultViewController.swift in Sources */,
+				4822B12528E488B900BF7018 /* AppDelegate.swift in Sources */,
+				48CF9C1B28EC790C004088F1 /* APICaller.swift in Sources */,
+				48CF9C2128EC7AE1004088F1 /* GenericImage.swift in Sources */,
+				4822B12728E488B900BF7018 /* SceneDelegate.swift in Sources */,
+				48CF9C1F28EC7A1E004088F1 /* User.swift in Sources */,
+				48CF9C2F28EC81D9004088F1 /* BaseCollectionViewCell.swift in Sources */,
+				48CF9C2428EC7CF5004088F1 /* GradientBackground.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4822B13328E488B900BF7018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4822B13C28E488B900BF7018 /* EuphoriaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4822B13D28E488B900BF7018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4822B14828E488B900BF7018 /* EuphoriaUITestsLaunchTests.swift in Sources */,
+				4822B14628E488B900BF7018 /* EuphoriaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4822B13928E488B900BF7018 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4822B12028E488B900BF7018 /* Euphoria */;
+			targetProxy = 4822B13828E488B900BF7018 /* PBXContainerItemProxy */;
+		};
+		4822B14328E488B900BF7018 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4822B12028E488B900BF7018 /* Euphoria */;
+			targetProxy = 4822B14228E488B900BF7018 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4822B12A28E488B900BF7018 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4822B12B28E488B900BF7018 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4822B12F28E488B900BF7018 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4822B13028E488B900BF7018 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4822B14928E488B900BF7018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4822B14A28E488B900BF7018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4822B14C28E488B900BF7018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Euphoria/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.Euphoria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4822B14D28E488B900BF7018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Euphoria/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.Euphoria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4822B14F28E488B900BF7018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.EuphoriaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Euphoria.app/Euphoria";
+			};
+			name = Debug;
+		};
+		4822B15028E488B900BF7018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.EuphoriaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Euphoria.app/Euphoria";
+			};
+			name = Release;
+		};
+		4822B15228E488B900BF7018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.EuphoriaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Euphoria;
+			};
+			name = Debug;
+		};
+		4822B15328E488B900BF7018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.EuphoriaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Euphoria;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4822B11C28E488B900BF7018 /* Build configuration list for PBXProject "Euphoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4822B14928E488B900BF7018 /* Debug */,
+				4822B14A28E488B900BF7018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4822B14B28E488B900BF7018 /* Build configuration list for PBXNativeTarget "Euphoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4822B14C28E488B900BF7018 /* Debug */,
+				4822B14D28E488B900BF7018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4822B14E28E488B900BF7018 /* Build configuration list for PBXNativeTarget "EuphoriaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4822B14F28E488B900BF7018 /* Debug */,
+				4822B15028E488B900BF7018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4822B15128E488B900BF7018 /* Build configuration list for PBXNativeTarget "EuphoriaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4822B15228E488B900BF7018 /* Debug */,
+				4822B15328E488B900BF7018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4822B11928E488B900BF7018 /* Project object */;
+}
