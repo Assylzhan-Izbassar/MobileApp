@@ -28,6 +28,7 @@
 		48CF9C2F28EC81D9004088F1 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C2E28EC81D9004088F1 /* BaseCollectionViewCell.swift */; };
 		48CF9C3128EC8228004088F1 /* CollectionCellDecoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C3028EC8228004088F1 /* CollectionCellDecoration.swift */; };
 		48CF9C3328EC8453004088F1 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C3228EC8453004088F1 /* SearchResultViewController.swift */; };
+		48D1511D28F1EF6B00DD5E2E /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1511C28F1EF6B00DD5E2E /* CustomTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		48CF9C2E28EC81D9004088F1 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		48CF9C3028EC8228004088F1 /* CollectionCellDecoration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellDecoration.swift; sourceTree = "<group>"; };
 		48CF9C3228EC8453004088F1 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		48D1511C28F1EF6B00DD5E2E /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				48CF9C2B28EC817B004088F1 /* Search */,
 				4822B12F28E488B900BF7018 /* LaunchScreen.storyboard */,
 				48CF9C2E28EC81D9004088F1 /* BaseCollectionViewCell.swift */,
+				48D1511C28F1EF6B00DD5E2E /* CustomTabBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				48CF9C3128EC8228004088F1 /* CollectionCellDecoration.swift in Sources */,
 				48CF9C1D28EC7949004088F1 /* HapticsManager.swift in Sources */,
 				48CF9C2D28EC81B2004088F1 /* SearchCollectionViewCell.swift in Sources */,
+				48D1511D28F1EF6B00DD5E2E /* CustomTabBar.swift in Sources */,
 				4822B12928E488B900BF7018 /* TabBarViewController.swift in Sources */,
 				48CF9C2A28EC8094004088F1 /* Genre.swift in Sources */,
 				48CF9C1928EC78EA004088F1 /* AuthManager.swift in Sources */,
