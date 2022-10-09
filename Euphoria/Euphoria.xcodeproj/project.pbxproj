@@ -20,6 +20,8 @@
 		4822B13C28E488B900BF7018 /* EuphoriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822B13B28E488B900BF7018 /* EuphoriaTests.swift */; };
 		4822B14628E488B900BF7018 /* EuphoriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822B14528E488B900BF7018 /* EuphoriaUITests.swift */; };
 		4822B14828E488B900BF7018 /* EuphoriaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822B14728E488B900BF7018 /* EuphoriaUITestsLaunchTests.swift */; };
+		485F706428F33B2500EB0F23 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F706328F33B2500EB0F23 /* PopularCollectionViewCell.swift */; };
+		485F706628F33B3700EB0F23 /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F706528F33B3700EB0F23 /* PopularViewController.swift */; };
 		48CF9C1928EC78EA004088F1 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C1828EC78EA004088F1 /* AuthManager.swift */; };
 		48CF9C1B28EC790C004088F1 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C1A28EC790C004088F1 /* APICaller.swift */; };
 		48CF9C1D28EC7949004088F1 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C1C28EC7949004088F1 /* HapticsManager.swift */; };
@@ -70,6 +72,8 @@
 		4822B14128E488B900BF7018 /* EuphoriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EuphoriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4822B14528E488B900BF7018 /* EuphoriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuphoriaUITests.swift; sourceTree = "<group>"; };
 		4822B14728E488B900BF7018 /* EuphoriaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuphoriaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		485F706328F33B2500EB0F23 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
+		485F706528F33B3700EB0F23 /* PopularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
 		48CF9C1828EC78EA004088F1 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		48CF9C1A28EC790C004088F1 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		48CF9C1C28EC7949004088F1 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
@@ -163,9 +167,18 @@
 			path = EuphoriaUITests;
 			sourceTree = "<group>";
 		};
+		485F706228F33B2500EB0F23 /* Popular */ = {
+			isa = PBXGroup;
+			children = (
+				485F706328F33B2500EB0F23 /* PopularCollectionViewCell.swift */,
+			);
+			path = Popular;
+			sourceTree = "<group>";
+		};
 		48CF9C1228EC7706004088F1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				485F706228F33B2500EB0F23 /* Popular */,
 				48CF9C2B28EC817B004088F1 /* Search */,
 				4822B12F28E488B900BF7018 /* LaunchScreen.storyboard */,
 				48CF9C2E28EC81D9004088F1 /* BaseCollectionViewCell.swift */,
@@ -235,6 +248,7 @@
 		48CF9C2528EC7DD7004088F1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				485F706528F33B3700EB0F23 /* PopularViewController.swift */,
 				4822B12828E488B900BF7018 /* TabBarViewController.swift */,
 				48CF9C2728EC7F22004088F1 /* SearchViewController.swift */,
 				115435DD28F3300600075977 /* PlayerViewController.swift */,
@@ -395,7 +409,9 @@
 				48CF9C2D28EC81B2004088F1 /* SearchCollectionViewCell.swift in Sources */,
 				48D1511D28F1EF6B00DD5E2E /* CustomTabBar.swift in Sources */,
 				115435E028F3302400075977 /* Track.swift in Sources */,
+				485F706428F33B2500EB0F23 /* PopularCollectionViewCell.swift in Sources */,
 				4822B12928E488B900BF7018 /* TabBarViewController.swift in Sources */,
+				485F706628F33B3700EB0F23 /* PopularViewController.swift in Sources */,
 				115435E228F3305B00075977 /* Album.swift in Sources */,
 				48CF9C2A28EC8094004088F1 /* Genre.swift in Sources */,
 				48CF9C1928EC78EA004088F1 /* AuthManager.swift in Sources */,

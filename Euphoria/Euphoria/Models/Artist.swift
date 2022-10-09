@@ -2,7 +2,7 @@
 //  Artist.swift
 //  Euphoria
 //
-//  Created by Nikita  on 09.10.2022.
+//  Created by Nikita on 09.10.2022.
 //
 
 import Foundation
