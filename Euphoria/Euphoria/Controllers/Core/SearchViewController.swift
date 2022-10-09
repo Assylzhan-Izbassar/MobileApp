@@ -32,7 +32,7 @@ class SearchViewController: UIViewController, GradientBackground {
     }
     
     private func decorate() {
-        if let searchFieldImage = UIImage(named: "search_img") {
+        if let searchFieldImage = UIImage(named: "SearchImg") {
             searchTextField.setLeftIcon(searchFieldImage)
             makeRoundedTextField()
         }
@@ -73,8 +73,20 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
             return UICollectionViewCell()
         }
         
+        var image = UIImage(named: "All")
+        
+        if(indexPath.row == 1) {
+            image = UIImage(named: "Tracks")
+        } else if (indexPath.row == 2) {
+            image = UIImage(named: "Artists")
+        } else if (indexPath.row == 3){
+            image = UIImage(named: "Albums")
+        }
+        
         cell.makeRoundedCorners(30.0, 10.0, CGSize(width: 5, height: 10))
-        cell.configure(with: collectionArray[indexPath.row])
+        
+        cell.configure(with: collectionArray[indexPath.row], image!)
+        
         
         return cell
     }
