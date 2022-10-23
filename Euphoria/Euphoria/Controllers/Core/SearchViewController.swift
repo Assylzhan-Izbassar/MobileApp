@@ -88,8 +88,8 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
         if let unwrappedImage = image {
             cell.configure(with: collectionArray[indexPath.row], unwrappedImage)
         } else {
-            let tempImage = UIImage(named: "no_image")
-            cell.configure(with: collectionArray[indexPath.row], tempImage!)
+            //let tempImage = UIImage(named: "no_image")
+            //cell.configure(with: collectionArray[indexPath.row], tempImage!)
         }
         
         //cell.configure(with: collectionArray[indexPath.row], image!)
