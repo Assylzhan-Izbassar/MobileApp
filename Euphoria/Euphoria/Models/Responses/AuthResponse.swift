@@ -2,7 +2,7 @@
 //  AuthResponse.swift
 //  Euphoria
 //
-//  Created by Nikita  on 23.10.2022.
+//  Created by macbook on 25.05.2021.
 //
 
 import Foundation
