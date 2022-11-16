@@ -73,41 +73,29 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
             return UICollectionViewCell()
         }
         
-        let image = UIImage(named: "pastel_texture")
+        var image = UIImage(named: "All")
+        
+        if(indexPath.row == 1) {
+            image = UIImage(named: "Tracks")
+        } else if (indexPath.row == 2) {
+            image = UIImage(named: "Artists")
+        } else if (indexPath.row == 3){
+            image = UIImage(named: "Albums")
+        }
         
         cell.makeRoundedCorners(30.0, 10.0, CGSize(width: 5, height: 10))
         
+        if let unwrappedImage = image {
+            cell.configure(with: collectionArray[indexPath.row], unwrappedImage)
+        } else {
+            //let tempImage = UIImage(named: "no_image")
+            //cell.configure(with: collectionArray[indexPath.row], tempImage!)
+        }
         
-        cell.configure(with: collectionArray[indexPath.row], image!)
         //cell.configure(with: collectionArray[indexPath.row], image!)
         
         
         return cell
-    }
-    
-    // here we can observe by clicking the cell
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let categoryName = collectionArray[indexPath.row].name
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        switch categoryName {
-        case "All":
-            let AllVC = storyboard.instantiateViewController(identifier: "AllViewController")
-            AllVC.modalPresentationStyle = .fullScreen
-            self.present(AllVC, animated: true, completion: nil)
-        case "Tracks":
-            let TracksVC = storyboard.instantiateViewController(identifier: "TracksViewController")
-            TracksVC.modalPresentationStyle = .fullScreen
-            self.present(TracksVC, animated: true, completion: nil)
-        case "Artists":
-            break
-        case "Albums":
-            let AlbumsVC = storyboard.instantiateViewController(identifier: "BrowersAlbumViewController")
-            AlbumsVC.modalPresentationStyle = .fullScreen
-            self.present(AlbumsVC, animated: true, completion: nil)
-        default:
-            break
-        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

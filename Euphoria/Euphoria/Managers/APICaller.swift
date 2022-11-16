@@ -20,47 +20,6 @@ final class APICaller {
     
     private init() {}
     
-    // MARK: - Albums
-    
-    public func getAlbumDetails(for album: Album, completion: @escaping (Result<AlbumDetailsResponse, Error>) -> Void) {
-        createRequest(with: URL(string: "\(Constants.baseApiUrl)/albums/\(album.id)"), type: .GET) { request in
-            let task = URLSession.shared.dataTask(with: request ) { data, _, error in
-                guard let data = data, error == nil else {
-                    completion(.failure(APIError.failedToGetData))
-                    return
-                }
-                do {
-                    let result = try JSONDecoder().decode(AlbumDetailsResponse.self, from: data)
-                    completion(.success(result))
-                } catch {
-                    print(error.localizedDescription)
-                    completion(.failure(error))
-                }
-            }
-            task.resume()
-        }
-    }
-    
-    public func getCurrentUserAlbums(completion: @escaping (Result<[Album], Error>) -> Void) {
-        createRequest(with: URL(string: "\(Constants.baseApiUrl)/me/albums"), type: .GET) { request in
-            let task = URLSession.shared.dataTask(with: request) { data, _, error in
-                guard let data = data, error == nil else {
-                    completion(.failure(APIError.failedToGetData))
-                    return
-                }
-                do {
-                    let result = try JSONDecoder().decode(LibraryAlbumResponse.self, from: data)
-                    print(result)
-                    completion(.success(result.items.compactMap({$0.album})))
-                } catch {
-                    print(error.localizedDescription)
-                    completion(.failure(error))
-                }
-            }
-            task.resume()
-        }
-    }
-    
     public func saveAlbumToCurrentUser(album: Album, completion: @escaping (Bool) -> Void ) {
         createRequest(with: URL(string: "\(Constants.baseApiUrl)/me/albums?ids=\(album.id)"), type: .PUT) { baseRequest in
             var request = baseRequest
@@ -80,84 +39,6 @@ final class APICaller {
         }
     }
     
-    // MARK: - Playlists
-    
-    public func getPlaylistDetails(for playlist: Playlist, completion: @escaping (Result<PlaylistDetailsResponse, Error>) -> Void) {
-        createRequest(with: URL(string: "\(Constants.baseApiUrl)/playlists/\(playlist.id)"), type: .GET) { request in
-            let task = URLSession.shared.dataTask(with: request ) { data, _, error in
-                guard let data = data, error == nil else {
-                    completion(.failure(APIError.failedToGetData))
-                    return
-                }
-                do {
-                    let result = try JSONDecoder().decode(PlaylistDetailsResponse.self, from: data)
-                    completion(.success(result))
-                } catch {
-                    print(error.localizedDescription)
-                    completion(.failure(error))
-                }
-            }
-            task.resume()
-        }
-    }
-    
-    public func getCurrentUserPlaylists(completion: @escaping (Result<[Playlist], Error>) -> Void) {
-        createRequest(with: URL(string: "\(Constants.baseApiUrl)/me/playlists?limit=20"), type: .GET) { baseRequest in
-            let task = URLSession.shared.dataTask(with: baseRequest) { data, _, error in
-                guard let data = data, error == nil else {
-                    completion(.failure(APIError.failedToGetData))
-                    return
-                }
-                do {
-                    let result = try JSONDecoder().decode(LibraryPlaylistResponse.self, from: data)
-                    completion(.success(result.items))
-                } catch {
-                    print(error.localizedDescription)
-                    completion(.failure(error))
-                }
-            }
-            task.resume()
-        }
-    }
-    
-    public func createPlaylist(with name: String, completion: @escaping (Bool) -> Void) {
-        getCurrentUserProfile { [weak self] (result) in
-            switch result {
-            case .success(let user):
-                let url = "\(Constants.baseApiUrl)/users/\(user.id)/playlists"
-                
-                self?.createRequest(with: URL(string: url), type: .POST) { baseRequest in
-                    
-                    var request = baseRequest
-                    let json = ["name": name]
-                    request.httpBody = try? JSONSerialization.data(withJSONObject: json, options: .fragmentsAllowed)
-                    
-                    let task = URLSession.shared.dataTask(with: request) { data, _, error in
-                        guard let data = data, error == nil else {
-                            completion(false)
-                            return
-                        }
-                        do {
-                            let result = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-                            print(result)
-                            if let response = result as? [String: Any], response["id"] as? String != nil {
-                                completion(true)
-                            } else{
-                                completion(false)
-                            }
-                        } catch {
-                            print(error.localizedDescription)
-                            completion(false)
-                        }
-                    }
-                    task.resume()
-                }
-                break
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-    }
     
     public func add(track: Track, to playlist: Playlist, completion: @escaping (Bool) -> Void) {
         createRequest(with: URL(string: "\(Constants.baseApiUrl)/playlists/\(playlist.id)/tracks"), type: .POST) { baseRequest in
@@ -278,47 +159,6 @@ final class APICaller {
         }
     }
     
-    public func getFeaturedPlaylists(completion: @escaping (Result<FeaturedPlaylistResponse, Error>) -> Void) {
-        createRequest(with: URL(string: "\(Constants.baseApiUrl)/browse/featured-playlists?limit=20"), type: .GET) { (request) in
-            let task = URLSession.shared.dataTask(with: request) { data, _, error in
-                guard let data = data, error == nil else {
-                    completion(.failure(APIError.failedToGetData))
-                    return
-                }
-                
-                do {
-                    let result = try JSONDecoder().decode(FeaturedPlaylistResponse.self, from: data)
-                    completion(.success(result))
-                } catch {
-                    print(error.localizedDescription)
-                    completion(.failure(error))
-                }
-            }
-            task.resume()
-        }
-    }
-    
-    public func getRecommendations(genres: Set<String>, completion: @escaping (Result<RecomendationResponse, Error>) -> Void) {
-        let seeds = genres.joined(separator: ",")
-        createRequest(with: URL(string: "\(Constants.baseApiUrl)/recommendations?limit=10&seed_genres=\(seeds)"), type: .GET) { (request) in
-            let task = URLSession.shared.dataTask(with: request) { data, _, error in
-                guard let data = data, error == nil else {
-                    completion(.failure(APIError.failedToGetData))
-                    return
-                }
-                
-                do {
-                    let result = try JSONDecoder().decode(RecomendationResponse.self, from: data)
-                    completion(.success(result))
-                } catch {
-                    print(error.localizedDescription)
-                    completion(.failure(error))
-                }
-            }
-            task.resume()
-        }
-    }
-    
     public func getRecommendedGenres(completion: @escaping (Result<GenreResponse, Error>) -> Void) {
         createRequest(with: URL(string: "\(Constants.baseApiUrl)/recommendations/available-genre-seeds"), type: .GET) { (request) in
             let task = URLSession.shared.dataTask(with: request) { data, _, error in
@@ -339,7 +179,6 @@ final class APICaller {
         }
     }
     
-
     // MARK: - Categories / Genres
     
     public func getCategories(completion: @escaping (Result<AllCategories, Error>) -> Void) {
@@ -359,27 +198,6 @@ final class APICaller {
             task.resume()
         }
     }
-    
-    public func getCategoryPlaylist(category: Category, completion: @escaping (Result<[Playlist], Error>) -> Void) {
-        createRequest(with: URL(string: "\(Constants.baseApiUrl)/browse/categories/\(category.id)/playlists?limits=30"), type: .GET) { baseRequest in
-            let task = URLSession.shared.dataTask(with: baseRequest) { data, _, error in
-                guard let data = data, error == nil else {
-                    completion(.failure(APIError.failedToGetData))
-                    return
-                }
-                do {
-                    let result = try JSONDecoder().decode(CategoryPlaylistResponse.self, from: data)
-                    let playlists = result.playlists.items
-                    print(playlists)
-                    completion(.success(playlists))
-                } catch {
-                    completion(.failure(error))
-                }
-            }
-            task.resume()
-        }
-    }
-    
     
     
     // MARK: - Private
