@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -19,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="5cY-X4-bCl">
-                                <rect key="frame" x="152" y="370" width="110" height="106"/>
+                                <rect key="frame" x="152" y="366" width="110" height="110"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Euphoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6j-Ag-e9w">
                                 <rect key="frame" x="116" y="484" width="183" height="49"/>
@@ -167,7 +166,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="NZ2-K4-u5T">
-                                <rect key="frame" x="67" y="139" width="280" height="280"/>
+                                <rect key="frame" x="67" y="135" width="280" height="280"/>
                                 <color key="tintColor" red="0.95593363050000002" green="0.72068041559999996" blue="0.82353258129999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 <constraints>
@@ -285,16 +284,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CxA-2n-YRs">
-                                <rect key="frame" x="34" y="454" width="346" height="65"/>
+                                <rect key="frame" x="34" y="450" width="346" height="69"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="the &quot;forever is the sweetest con&quot; chapter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1Y-6y-O51">
-                                        <rect key="frame" x="0.0" y="0.0" width="346" height="37"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="69"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Taylor Swift" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prv-xr-YHu">
-                                        <rect key="frame" x="0.0" y="37" width="346" height="28"/>
+                                        <rect key="frame" x="0.0" y="69" width="346" height="0.0"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -346,13 +345,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Og-iK-aFR">
-                                <rect key="frame" x="20" y="80" width="374" height="48.5"/>
+                                <rect key="frame" x="20" y="76" width="374" height="48.5"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="42"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rGO-dx-Oq3">
-                                <rect key="frame" x="0.0" y="267" width="411" height="546"/>
+                                <rect key="frame" x="0.0" y="263" width="414" height="550"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rGO-dx-Oq3" secondAttribute="height" multiplier="207:275" id="ekg-RG-l8c"/>
@@ -365,7 +364,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SearchCollectionViewCell" id="Jht-EJ-Nfh" customClass="SearchCollectionViewCell" customModule="Euphoria" customModuleProvider="target">
-                                        <rect key="frame" x="23.5" y="23" width="364" height="108"/>
+                                        <rect key="frame" x="25" y="23" width="364" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="E28-ab-GZk">
                                             <rect key="frame" x="0.0" y="0.0" width="364" height="108"/>
@@ -396,13 +395,14 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="364" height="108"/>
                                         <connections>
+                                            <outlet property="cellImage" destination="ufx-5q-dcQ" id="sgm-s6-M44"/>
                                             <outlet property="title" destination="0lH-ct-J4Y" id="CnY-Zc-qAb"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="xs2-YF-ahf">
-                                <rect key="frame" x="20" y="145" width="364" height="122"/>
+                                <rect key="frame" x="20" y="141" width="364" height="122"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Artist, song or playlist" clearsOnBeginEditing="YES" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="UOa-5I-sim" customClass="PaddingTextField" customModule="Euphoria" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="66"/>
@@ -453,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B8B-ku-XKA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3180" y="-618"/>
+            <point key="canvasLocation" x="3180" y="-619"/>
         </scene>
         <!--Search Result View Controller-->
         <scene sceneID="Uyg-wU-tsS">
@@ -464,7 +464,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BN-0Q-KdT" userLabel="Back Btn">
-                                <rect key="frame" x="20" y="80" width="40" height="40"/>
+                                <rect key="frame" x="20" y="76" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="Vf2-FO-At6"/>
                                     <constraint firstAttribute="height" constant="40" id="vpR-n9-hZa"/>
@@ -476,14 +476,14 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wji-or-fXO">
-                                <rect key="frame" x="0.0" y="128" width="414" height="768"/>
+                                <rect key="frame" x="0.0" y="124" width="414" height="772"/>
                                 <color key="backgroundColor" red="0.99812668559999995" green="0.58741402629999995" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.99812668559999995" green="0.58741402629999995" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="separatorColor" red="0.40070134400000001" green="0.3418955803" blue="0.76866406200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultsTableViewCell" rowHeight="100" id="M6n-Yz-cBu" customClass="SearchResultsTableViewCell" customModule="Euphoria" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="100"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M6n-Yz-cBu" id="fdy-2R-MSL">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -567,7 +567,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpm-vP-WGX" userLabel="Back Btn">
-                                <rect key="frame" x="20" y="80" width="40" height="40"/>
+                                <rect key="frame" x="20" y="76" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="HX5-ea-sOP"/>
                                     <constraint firstAttribute="height" constant="40" id="gWp-kh-qZj"/>
@@ -579,13 +579,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Albums" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXR-w8-amc">
-                                <rect key="frame" x="20" y="128" width="374" height="48.5"/>
+                                <rect key="frame" x="20" y="124" width="374" height="48.5"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="42"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="m5c-MC-cVI">
-                                <rect key="frame" x="0.0" y="184.5" width="414" height="711.5"/>
+                                <rect key="frame" x="0.0" y="180.5" width="414" height="715.5"/>
                                 <color key="backgroundColor" white="0.67932736510000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dcF-Fi-RdL">
                                     <size key="itemSize" width="200" height="266"/>
@@ -681,7 +681,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BQ-0m-kfa" userLabel="Back Btn">
-                                <rect key="frame" x="20" y="80" width="40" height="40"/>
+                                <rect key="frame" x="20" y="76" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="4Hg-j2-7Jl"/>
                                     <constraint firstAttribute="height" constant="40" id="I3A-Gu-cPM"/>
@@ -693,13 +693,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the &quot;forever is the sweetest con&quot; chapter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lq-ZI-Rhs">
-                                <rect key="frame" x="82" y="80" width="250" height="52"/>
+                                <rect key="frame" x="82" y="76" width="250" height="56"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.99998790029999995" blue="0.9999920726" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSh-Bb-7CQ">
-                                <rect key="frame" x="372" y="80" width="22" height="22"/>
+                                <rect key="frame" x="372" y="76" width="22" height="22"/>
                                 <color key="tintColor" red="1" green="0.99998790029999995" blue="0.9999920726" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" image="tray.and.arrow.down" catalog="system">
                                     <color key="titleColor" red="1" green="0.99998790029999995" blue="0.9999920726" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -930,7 +930,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQr-Cx-CMo">
-                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <color key="backgroundColor" red="1" green="0.99998790029999995" blue="0.9999920726" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -983,7 +983,7 @@
                 <navigationController storyboardIdentifier="WelcomeViewController" automaticallyAdjustsScrollViewInsets="NO" id="z5b-uw-cjv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="nE0-gx-hmG">
-                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.50388139489999995" green="0.42612454300000002" blue="0.96475166079999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
@@ -1011,7 +1011,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="7aA-7e-idr">
-                                <rect key="frame" x="0.0" y="84" width="414" height="728.5"/>
+                                <rect key="frame" x="0.0" y="80" width="414" height="732.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SqK-vl-Feo">
                                         <rect key="frame" x="15" y="0.0" width="384" height="48.5"/>
@@ -1025,10 +1025,10 @@
                                         </subviews>
                                     </stackView>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHw-qe-Ouz">
-                                        <rect key="frame" x="0.0" y="51.5" width="414" height="677"/>
+                                        <rect key="frame" x="0.0" y="51.5" width="414" height="681"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PZT-91-uhi">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="677"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="681"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="414" id="JRW-pG-TRF"/>
@@ -1127,7 +1127,7 @@
         <image name="search_icon" width="35" height="35"/>
         <image name="settings_icon" width="35" height="35"/>
         <image name="shuffle" width="512" height="512"/>
-        <image name="tray.and.arrow.down" catalog="system" width="128" height="111"/>
+        <image name="tray.and.arrow.down" catalog="system" width="128" height="109"/>
         <image name="user" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1139,7 +1139,7 @@
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
