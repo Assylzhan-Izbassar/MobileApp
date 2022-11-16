@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Euphoria' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Euphoria
+  pod 'SDWebImage', '~> 5.13'
+  pod 'FirebaseAnalytics'
+
+  target 'EuphoriaTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'EuphoriaUITests' do
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,6 @@
+framework module Pods_Euphoria_EuphoriaUITests {
+  umbrella header "Pods-Euphoria-EuphoriaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

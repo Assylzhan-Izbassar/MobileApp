@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MyMediaAlbumCollectionViewCell: UICollectionViewCell {
     static let identifier = "MyMediaAlbumCollectionViewCell"

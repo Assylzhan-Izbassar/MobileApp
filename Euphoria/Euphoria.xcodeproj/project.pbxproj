@@ -18,6 +18,9 @@
 		115435E028F3302400075977 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115435DF28F3302400075977 /* Track.swift */; };
 		115435E228F3305B00075977 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115435E128F3305B00075977 /* Album.swift */; };
 		115435E428F3308200075977 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115435E328F3308200075977 /* Artist.swift */; };
+		11CB07682924F05800B83F35 /* AlbumDetailsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB07672924F05800B83F35 /* AlbumDetailsCellViewModel.swift */; };
+		11CB076C2924F09E00B83F35 /* AlbumHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB076B2924F09E00B83F35 /* AlbumHeaderViewModel.swift */; };
+		11CB076E2924F17F00B83F35 /* MyMediaAlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB076D2924F17F00B83F35 /* MyMediaAlbumViewModel.swift */; };
 		4822B12528E488B900BF7018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822B12428E488B900BF7018 /* AppDelegate.swift */; };
 		4822B12728E488B900BF7018 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822B12628E488B900BF7018 /* SceneDelegate.swift */; };
 		4822B12928E488B900BF7018 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822B12828E488B900BF7018 /* TabBarViewController.swift */; };
@@ -39,11 +42,11 @@
 		48CF9C3128EC8228004088F1 /* CollectionCellDecoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C3028EC8228004088F1 /* CollectionCellDecoration.swift */; };
 		48CF9C3328EC8453004088F1 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9C3228EC8453004088F1 /* SearchResultViewController.swift */; };
 		48D1511D28F1EF6B00DD5E2E /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1511C28F1EF6B00DD5E2E /* CustomTabBar.swift */; };
-		8487F7EB2905A7FB0054DDE6 /* MyMediaAlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487F7EA2905A7FB0054DDE6 /* MyMediaAlbumViewModel.swift */; };
-		8487F7ED2905A92D0054DDE6 /* AlbumHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487F7EC2905A92D0054DDE6 /* AlbumHeaderViewModel.swift */; };
-		8487F7EF2905A9640054DDE6 /* AlbumDetailsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487F7EE2905A9640054DDE6 /* AlbumDetailsCellViewModel.swift */; };
 		8487F7F22905AA0F0054DDE6 /* MyMediaHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487F7F12905AA0F0054DDE6 /* MyMediaHeaderCollectionReusableView.swift */; };
 		8487F7F42905AA530054DDE6 /* MyMediaAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487F7F32905AA530054DDE6 /* MyMediaAlbumCollectionViewCell.swift */; };
+		A0FC9240152EBC41D2E2C58E /* Pods_EuphoriaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F64EC17A1517B74960F984 /* Pods_EuphoriaTests.framework */; };
+		CB26BDFB69ECC8948A38693F /* Pods_Euphoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C249ED8E0F8982463B9ABEF7 /* Pods_Euphoria.framework */; };
+		FA1BAC54E60E1F14F84CE9CD /* Pods_Euphoria_EuphoriaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B28A514DA93D7698883E51 /* Pods_Euphoria_EuphoriaUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		115435DF28F3302400075977 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		115435E128F3305B00075977 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		115435E328F3308200075977 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		11CB07672924F05800B83F35 /* AlbumDetailsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsCellViewModel.swift; sourceTree = "<group>"; };
+		11CB076B2924F09E00B83F35 /* AlbumHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHeaderViewModel.swift; sourceTree = "<group>"; };
+		11CB076D2924F17F00B83F35 /* MyMediaAlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediaAlbumViewModel.swift; sourceTree = "<group>"; };
 		4822B12128E488B900BF7018 /* Euphoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euphoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4822B12428E488B900BF7018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4822B12628E488B900BF7018 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,11 +106,17 @@
 		48CF9C3028EC8228004088F1 /* CollectionCellDecoration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellDecoration.swift; sourceTree = "<group>"; };
 		48CF9C3228EC8453004088F1 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		48D1511C28F1EF6B00DD5E2E /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
-		8487F7EA2905A7FB0054DDE6 /* MyMediaAlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyMediaAlbumViewModel.swift; path = ../../../../../Downloads/Euphoria/Euphoria/MyMediaAlbumViewModel.swift; sourceTree = "<group>"; };
-		8487F7EC2905A92D0054DDE6 /* AlbumHeaderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumHeaderViewModel.swift; path = ../../../../../Downloads/Euphoria/Euphoria/AlbumHeaderViewModel.swift; sourceTree = "<group>"; };
-		8487F7EE2905A9640054DDE6 /* AlbumDetailsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlbumDetailsCellViewModel.swift; path = ../../../../../Downloads/Euphoria/Euphoria/AlbumDetailsCellViewModel.swift; sourceTree = "<group>"; };
 		8487F7F12905AA0F0054DDE6 /* MyMediaHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediaHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		8487F7F32905AA530054DDE6 /* MyMediaAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediaAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		9332F7C4F5F36801853D016D /* Pods-Euphoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.debug.xcconfig"; path = "Target Support Files/Pods-Euphoria/Pods-Euphoria.debug.xcconfig"; sourceTree = "<group>"; };
+		B9B28A514DA93D7698883E51 /* Pods_Euphoria_EuphoriaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euphoria_EuphoriaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0F3302F2D4C4C6630C8F7A /* Pods-EuphoriaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EuphoriaTests.release.xcconfig"; path = "Target Support Files/Pods-EuphoriaTests/Pods-EuphoriaTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF9FBB7DF2C287C92E778B19 /* Pods-Euphoria-EuphoriaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria-EuphoriaUITests.release.xcconfig"; path = "Target Support Files/Pods-Euphoria-EuphoriaUITests/Pods-Euphoria-EuphoriaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C249ED8E0F8982463B9ABEF7 /* Pods_Euphoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euphoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA79D455269A0029766B3560 /* Pods-Euphoria-EuphoriaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria-EuphoriaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Euphoria-EuphoriaUITests/Pods-Euphoria-EuphoriaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF002D66488FA02D684AFAB5 /* Pods-Euphoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.release.xcconfig"; path = "Target Support Files/Pods-Euphoria/Pods-Euphoria.release.xcconfig"; sourceTree = "<group>"; };
+		F201D4E8A02B8D6D47F5956F /* Pods-EuphoriaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EuphoriaTests.debug.xcconfig"; path = "Target Support Files/Pods-EuphoriaTests/Pods-EuphoriaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8F64EC17A1517B74960F984 /* Pods_EuphoriaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EuphoriaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB26BDFB69ECC8948A38693F /* Pods_Euphoria.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FC9240152EBC41D2E2C58E /* Pods_EuphoriaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1BAC54E60E1F14F84CE9CD /* Pods_Euphoria_EuphoriaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +155,16 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
+		11CB07662924F02200B83F35 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				11CB07672924F05800B83F35 /* AlbumDetailsCellViewModel.swift */,
+				11CB076B2924F09E00B83F35 /* AlbumHeaderViewModel.swift */,
+				11CB076D2924F17F00B83F35 /* MyMediaAlbumViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		4822B11828E488B900BF7018 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +172,8 @@
 				4822B13A28E488B900BF7018 /* EuphoriaTests */,
 				4822B14428E488B900BF7018 /* EuphoriaUITests */,
 				4822B12228E488B900BF7018 /* Products */,
+				6A38F54CC57C597D7FB69C8F /* Pods */,
+				E1144B77F20B9DBA5CB42581 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,11 +190,10 @@
 		4822B12328E488B900BF7018 /* Euphoria */ = {
 			isa = PBXGroup;
 			children = (
-				84E817262905B1F7002FFD32 /* New Group */,
+				11CB07662924F02200B83F35 /* ViewModels */,
 				48CF9C2228EC7CCB004088F1 /* Interfaces */,
 				48CF9C1728EC7744004088F1 /* Resources */,
 				48CF9C1628EC772F004088F1 /* Managers */,
-				48CF9C1528EC7728004088F1 /* ViewModels */,
 				48CF9C1428EC7720004088F1 /* Models */,
 				48CF9C1328EC770E004088F1 /* Controllers */,
 				48CF9C1228EC7706004088F1 /* Views */,
@@ -239,17 +265,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		48CF9C1528EC7728004088F1 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				84E817252905B1ED002FFD32 /* New Group */,
-				8487F7EC2905A92D0054DDE6 /* AlbumHeaderViewModel.swift */,
-				8487F7EA2905A7FB0054DDE6 /* MyMediaAlbumViewModel.swift */,
-				8487F7EE2905A9640054DDE6 /* AlbumDetailsCellViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		48CF9C1628EC772F004088F1 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +323,20 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		6A38F54CC57C597D7FB69C8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9332F7C4F5F36801853D016D /* Pods-Euphoria.debug.xcconfig */,
+				EF002D66488FA02D684AFAB5 /* Pods-Euphoria.release.xcconfig */,
+				DA79D455269A0029766B3560 /* Pods-Euphoria-EuphoriaUITests.debug.xcconfig */,
+				BF9FBB7DF2C287C92E778B19 /* Pods-Euphoria-EuphoriaUITests.release.xcconfig */,
+				F201D4E8A02B8D6D47F5956F /* Pods-EuphoriaTests.debug.xcconfig */,
+				BE0F3302F2D4C4C6630C8F7A /* Pods-EuphoriaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8487F7F02905A9F50054DDE6 /* MyMedia */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,19 +346,14 @@
 			path = MyMedia;
 			sourceTree = "<group>";
 		};
-		84E817252905B1ED002FFD32 /* New Group */ = {
+		E1144B77F20B9DBA5CB42581 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C249ED8E0F8982463B9ABEF7 /* Pods_Euphoria.framework */,
+				B9B28A514DA93D7698883E51 /* Pods_Euphoria_EuphoriaUITests.framework */,
+				F8F64EC17A1517B74960F984 /* Pods_EuphoriaTests.framework */,
 			);
-			name = "New Group";
-			path = "Euphoria/ViewModels/New Group";
-			sourceTree = "<group>";
-		};
-		84E817262905B1F7002FFD32 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,9 +363,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4822B14B28E488B900BF7018 /* Build configuration list for PBXNativeTarget "Euphoria" */;
 			buildPhases = (
+				ECCC428FF04728D85BD33AFF /* [CP] Check Pods Manifest.lock */,
 				4822B11D28E488B900BF7018 /* Sources */,
 				4822B11E28E488B900BF7018 /* Frameworks */,
 				4822B11F28E488B900BF7018 /* Resources */,
+				BA1F375EEF8ADF54457479F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,6 +382,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4822B14E28E488B900BF7018 /* Build configuration list for PBXNativeTarget "EuphoriaTests" */;
 			buildPhases = (
+				AAF924C383C76A8D302ABCDA /* [CP] Check Pods Manifest.lock */,
 				4822B13328E488B900BF7018 /* Sources */,
 				4822B13428E488B900BF7018 /* Frameworks */,
 				4822B13528E488B900BF7018 /* Resources */,
@@ -374,9 +401,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4822B15128E488B900BF7018 /* Build configuration list for PBXNativeTarget "EuphoriaUITests" */;
 			buildPhases = (
+				D28F9D7978965233FC5401BF /* [CP] Check Pods Manifest.lock */,
 				4822B13D28E488B900BF7018 /* Sources */,
 				4822B13E28E488B900BF7018 /* Frameworks */,
 				4822B13F28E488B900BF7018 /* Resources */,
+				A2B14DBEDF80C833827E0E27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -458,6 +487,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A2B14DBEDF80C833827E0E27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Euphoria-EuphoriaUITests/Pods-Euphoria-EuphoriaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Euphoria-EuphoriaUITests/Pods-Euphoria-EuphoriaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Euphoria-EuphoriaUITests/Pods-Euphoria-EuphoriaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAF924C383C76A8D302ABCDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EuphoriaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA1F375EEF8ADF54457479F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Euphoria/Pods-Euphoria-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Euphoria/Pods-Euphoria-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Euphoria/Pods-Euphoria-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D28F9D7978965233FC5401BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Euphoria-EuphoriaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECCC428FF04728D85BD33AFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Euphoria-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4822B11D28E488B900BF7018 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -466,18 +598,18 @@
 				112E39D5290580E400C9719E /* AuthViewController.swift in Sources */,
 				48CF9C2828EC7F22004088F1 /* SearchViewController.swift in Sources */,
 				48CF9C3128EC8228004088F1 /* CollectionCellDecoration.swift in Sources */,
-				8487F7ED2905A92D0054DDE6 /* AlbumHeaderViewModel.swift in Sources */,
 				48CF9C2D28EC81B2004088F1 /* SearchCollectionViewCell.swift in Sources */,
 				48D1511D28F1EF6B00DD5E2E /* CustomTabBar.swift in Sources */,
 				115435E028F3302400075977 /* Track.swift in Sources */,
 				485F706428F33B2500EB0F23 /* PopularCollectionViewCell.swift in Sources */,
-				8487F7EF2905A9640054DDE6 /* AlbumDetailsCellViewModel.swift in Sources */,
 				4822B12928E488B900BF7018 /* TabBarViewController.swift in Sources */,
+				11CB07682924F05800B83F35 /* AlbumDetailsCellViewModel.swift in Sources */,
 				485F706628F33B3700EB0F23 /* PopularViewController.swift in Sources */,
 				115435E228F3305B00075977 /* Album.swift in Sources */,
 				112E39D72905811200C9719E /* Playlist.swift in Sources */,
 				8487F7F42905AA530054DDE6 /* MyMediaAlbumCollectionViewCell.swift in Sources */,
 				48CF9C2A28EC8094004088F1 /* Genre.swift in Sources */,
+				11CB076E2924F17F00B83F35 /* MyMediaAlbumViewModel.swift in Sources */,
 				48CF9C1928EC78EA004088F1 /* AuthManager.swift in Sources */,
 				48CF9C3328EC8453004088F1 /* SearchResultViewController.swift in Sources */,
 				4822B12528E488B900BF7018 /* AppDelegate.swift in Sources */,
@@ -488,11 +620,11 @@
 				112E39DE2905839100C9719E /* WelcomeViewController.swift in Sources */,
 				48CF9C2F28EC81D9004088F1 /* BaseCollectionViewCell.swift in Sources */,
 				112E39DC2905831700C9719E /* IntroViewController.swift in Sources */,
-				8487F7EB2905A7FB0054DDE6 /* MyMediaAlbumViewModel.swift in Sources */,
 				48CF9C2428EC7CF5004088F1 /* GradientBackground.swift in Sources */,
 				115435E428F3308200075977 /* Artist.swift in Sources */,
 				8487F7F22905AA0F0054DDE6 /* MyMediaHeaderCollectionReusableView.swift in Sources */,
 				112E39DA2905818700C9719E /* AuthResponse.swift in Sources */,
+				11CB076C2924F09E00B83F35 /* AlbumHeaderViewModel.swift in Sources */,
 				115435DE28F3300600075977 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,6 +789,7 @@
 		};
 		4822B14C28E488B900BF7018 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9332F7C4F5F36801853D016D /* Pods-Euphoria.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -685,6 +818,7 @@
 		};
 		4822B14D28E488B900BF7018 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF002D66488FA02D684AFAB5 /* Pods-Euphoria.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -713,6 +847,7 @@
 		};
 		4822B14F28E488B900BF7018 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F201D4E8A02B8D6D47F5956F /* Pods-EuphoriaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -732,6 +867,7 @@
 		};
 		4822B15028E488B900BF7018 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE0F3302F2D4C4C6630C8F7A /* Pods-EuphoriaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -751,6 +887,7 @@
 		};
 		4822B15228E488B900BF7018 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA79D455269A0029766B3560 /* Pods-Euphoria-EuphoriaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -768,6 +905,7 @@
 		};
 		4822B15328E488B900BF7018 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF9FBB7DF2C287C92E778B19 /* Pods-Euphoria-EuphoriaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

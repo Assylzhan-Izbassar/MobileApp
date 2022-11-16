@@ -1,5 +1,5 @@
 //
-//  Albun.swift
+//  Album.swift
 //  Euphoria
 //
 //  Created by Nikita on 09.10.2022.
