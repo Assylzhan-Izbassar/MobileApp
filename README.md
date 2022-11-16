@@ -1,2 +1,3 @@
-# MobileApp
-Mobile Application for the KBTU Course.
+# Euphoria
+
+Mobile Application for the KBTU Course - 2022.
