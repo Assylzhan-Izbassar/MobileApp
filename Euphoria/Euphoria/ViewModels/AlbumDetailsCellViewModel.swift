@@ -2,7 +2,7 @@
 //  AlbumDetailsCellViewModel.swift
 //  Euphoria
 //
-//  Created by Anna Ogorodova on 23.10.2022.
+//  Created by macbook on 28.05.2021.
 //
 
 import Foundation

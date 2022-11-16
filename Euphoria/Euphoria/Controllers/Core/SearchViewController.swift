@@ -83,13 +83,9 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
             image = UIImage(named: "Albums")
         }
         
+        
         cell.makeRoundedCorners(30.0, 10.0, CGSize(width: 5, height: 10))
-        
-        guard let unwrappedImage = image else {
-            return cell
-        }
-        
-        cell.configure(with: collectionArray[indexPath.row], unwrappedImage)
+        cell.configure(with: collectionArray[indexPath.row])
         
         //cell.configure(with: collectionArray[indexPath.row], image!)
         
@@ -111,6 +107,31 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 23
+    }
+    
+    // here we can observe by clicking the cell
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let categoryName = collectionArray[indexPath.row].name
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        switch categoryName {
+        case "All":
+            let AllVC = storyboard.instantiateViewController(identifier: "AllViewController")
+            AllVC.modalPresentationStyle = .fullScreen
+            self.present(AllVC, animated: true, completion: nil)
+        case "Tracks":
+            let TracksVC = storyboard.instantiateViewController(identifier: "TracksViewController")
+            TracksVC.modalPresentationStyle = .fullScreen
+            self.present(TracksVC, animated: true, completion: nil)
+        case "Artists":
+            break
+        case "Albums":
+            let AlbumsVC = storyboard.instantiateViewController(identifier: "BrowersAlbumViewController")
+            AlbumsVC.modalPresentationStyle = .fullScreen
+            self.present(AlbumsVC, animated: true, completion: nil)
+        default:
+            break
+        }
     }
 }
 

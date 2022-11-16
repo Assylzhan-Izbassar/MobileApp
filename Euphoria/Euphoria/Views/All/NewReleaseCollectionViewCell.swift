@@ -2,7 +2,7 @@
 //  NewReleaseCollectionViewCell.swift
 //  Euphoria
 //
-//  Created by Nikita  on 23.10.2022.
+//  Created by macbook on 26.05.2021.
 //
 
 import UIKit

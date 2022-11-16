@@ -1,13 +1,13 @@
 //
-//  MyMediaAlbumViewModel.swift
+//  FeaturedPlaylistCellViewModel.swift
 //  Euphoria
 //
-//  Created by macbook on 30.05.2021.
+//  Created by macbook on 27.05.2021.
 //
 
 import Foundation
 
-struct MyMediaAlbumViewModel {
+struct FeaturedPlaylistCellViewModel {
     let name: String?
     let imageUrl: URL?
     let creatorName: String?

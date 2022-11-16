@@ -220,4 +220,45 @@ final class APICaller {
             completion(request)
         }
     }
+    
+    public func getFeaturedPlaylists(completion: @escaping (Result<FeaturedPlaylistResponse, Error>) -> Void) {
+        createRequest(with: URL(string: "\(Constants.baseApiUrl)/browse/featured-playlists?limit=20"), type: .GET) { (request) in
+            let task = URLSession.shared.dataTask(with: request) { data, _, error in
+                guard let data = data, error == nil else {
+                    completion(.failure(APIError.failedToGetData))
+                    return
+                }
+                
+                do {
+                    let result = try JSONDecoder().decode(FeaturedPlaylistResponse.self, from: data)
+                    completion(.success(result))
+                } catch {
+                    print(error.localizedDescription)
+                    completion(.failure(error))
+                }
+            }
+            task.resume()
+        }
+    }
+    
+    public func getRecommendations(genres: Set<String>, completion: @escaping (Result<RecomendationResponse, Error>) -> Void) {
+        let seeds = genres.joined(separator: ",")
+        createRequest(with: URL(string: "\(Constants.baseApiUrl)/recommendations?limit=10&seed_genres=\(seeds)"), type: .GET) { (request) in
+            let task = URLSession.shared.dataTask(with: request) { data, _, error in
+                guard let data = data, error == nil else {
+                    completion(.failure(APIError.failedToGetData))
+                    return
+                }
+                
+                do {
+                    let result = try JSONDecoder().decode(RecomendationResponse.self, from: data)
+                    completion(.success(result))
+                } catch {
+                    print(error.localizedDescription)
+                    completion(.failure(error))
+                }
+            }
+            task.resume()
+        }
+    }
 }
