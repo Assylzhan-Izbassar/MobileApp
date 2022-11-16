@@ -85,12 +85,11 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
         
         cell.makeRoundedCorners(30.0, 10.0, CGSize(width: 5, height: 10))
         
-        if let unwrappedImage = image {
-            cell.configure(with: collectionArray[indexPath.row], unwrappedImage)
-        } else {
-            //let tempImage = UIImage(named: "no_image")
-            //cell.configure(with: collectionArray[indexPath.row], tempImage!)
+        guard let unwrappedImage = image else {
+            return cell
         }
+        
+        cell.configure(with: collectionArray[indexPath.row], unwrappedImage)
         
         //cell.configure(with: collectionArray[indexPath.row], image!)
         

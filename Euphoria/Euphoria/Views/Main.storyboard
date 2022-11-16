@@ -162,7 +162,7 @@
             <objects>
                 <viewController storyboardIdentifier="PlayerViewController" id="mqV-Uo-24U" customClass="PlayerViewController" customModule="Euphoria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3jj-xD-Qgy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="NZ2-K4-u5T">
@@ -175,7 +175,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="w4M-cS-zeh">
-                                <rect key="frame" x="34" y="624" width="346" height="90"/>
+                                <rect key="frame" x="34" y="584.5" width="346" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P3-UI-ChA" userLabel="Repeat Btn">
                                         <rect key="frame" x="0.0" y="30" width="30" height="30"/>
@@ -255,16 +255,16 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="sMB-r6-Qaq">
-                                <rect key="frame" x="13" y="760" width="388" height="30"/>
+                                <rect key="frame" x="13" y="720.5" width="388" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b1-g8-T52">
-                                        <rect key="frame" x="0.0" y="9.5" width="43" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="20.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.94902855159999999" green="0.94900804760000002" blue="0.94901210069999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pjb-N1-wH8">
-                                        <rect key="frame" x="45" y="0.0" width="298" height="31"/>
+                                        <rect key="frame" x="45" y="0.0" width="298" height="21.5"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="294" id="Xzy-pJ-AIw"/>
@@ -276,7 +276,7 @@
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b27-aO-B94">
-                                        <rect key="frame" x="345" y="9.5" width="43" height="20.5"/>
+                                        <rect key="frame" x="345" y="0.0" width="43" height="20.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.94902855159999999" green="0.94900804760000002" blue="0.94901210069999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -284,16 +284,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CxA-2n-YRs">
-                                <rect key="frame" x="34" y="450" width="346" height="108.5"/>
+                                <rect key="frame" x="34" y="450" width="346" height="69"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the &quot;forever is the sweetest con&quot; chapter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1Y-6y-O51">
-                                        <rect key="frame" x="0.0" y="0.0" width="346" height="80.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="the &quot;forever is the sweetest con&quot; chapter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1Y-6y-O51">
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="69"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taylor Swift" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prv-xr-YHu">
-                                        <rect key="frame" x="0.0" y="80.5" width="346" height="28"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Taylor Swift" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prv-xr-YHu">
+                                        <rect key="frame" x="0.0" y="69" width="346" height="0.0"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -334,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Chi-2A-iqH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4139.130434782609" y="430.58035714285711"/>
+            <point key="canvasLocation" x="3180" y="46"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="VT7-Td-jch">
@@ -968,6 +968,7 @@
                     <connections>
                         <segue destination="DuJ-XR-a1n" kind="relationship" relationship="viewControllers" id="ian-Lm-h7z"/>
                         <segue destination="Fzj-M4-a23" kind="relationship" relationship="viewControllers" id="AWJ-Pq-r5S"/>
+                        <segue destination="mqV-Uo-24U" kind="relationship" relationship="viewControllers" id="JJI-7H-xuf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Xo-E1-eWw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
