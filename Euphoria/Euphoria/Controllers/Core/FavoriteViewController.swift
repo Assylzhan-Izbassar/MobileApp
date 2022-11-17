@@ -97,7 +97,7 @@ class FavoriteViewController: UIViewController, GradientBackground {
 
 extension FavoriteViewController: MyMediaHeaderCollectionReusableViewDelegate {
     func addNewAlbum() {
-        let x = 1
+        _ = 1
     }
     
     func addNewPlaylist() {
@@ -191,7 +191,7 @@ extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         
-        let section = sections[indexPath.section]
+//        let section = sections[indexPath.section]
         
 //        switch section {
 //        case .playlists:

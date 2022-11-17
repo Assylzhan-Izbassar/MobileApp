@@ -74,7 +74,7 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
         }
         
         var image = UIImage(named: "All")
-        
+
         if(indexPath.row == 1) {
             image = UIImage(named: "Tracks")
         } else if (indexPath.row == 2) {
@@ -85,7 +85,7 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
         
         
         cell.makeRoundedCorners(30.0, 10.0, CGSize(width: 5, height: 10))
-        cell.configure(with: collectionArray[indexPath.row])
+        cell.configure(with: collectionArray[indexPath.row], image!)
         
         //cell.configure(with: collectionArray[indexPath.row], image!)
         

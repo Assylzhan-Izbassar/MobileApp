@@ -81,9 +81,35 @@ class PlayerViewController: UIViewController, GradientBackground {
     
     // method that setting up the player with url
     private func setupPlayer(with song: Track) {
-
+        guard let url = song.preview_url
+        else {
+            dismiss(animated: true, completion: nil)
+            let alert = UIAlertController(title: NSLocalizedString("Oops", comment: ""), message: NSLocalizedString("Track hasn't have a URL.", comment: ""), preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("Close", comment: ""), style: .cancel, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
     }
     
+    songTitle.text = song.name
+    artistName.text = song.artists.first?.name
+    songPoster.sd_setImage(with: URL(string: song.album?.images.first?.url ?? ""), completed: nil)
+        
+    let url_ = NSURL(string: url)
+    downloadFileFromURL(url: url_!)
+        
+//        do {
+//            player = try AVAudioPlayer(contentsOf: url)
+//            player.delegate = self
+//            player.prepareToPlay()
+//
+//            // if phone is not in silence then it will be play
+//            try AVAudioSession.sharedInstance().setCategory(.playback)
+//            try AVAudioSession.sharedInstance().setActive(true)
+//        } catch let error {
+//            print(error.localizedDescription)
+//        }
+    }
+        
     func downloadFileFromURL(url: NSURL){
         
         let group = DispatchGroup()
