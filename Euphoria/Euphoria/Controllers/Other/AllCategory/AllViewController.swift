@@ -198,6 +198,20 @@ class AllViewController: UIViewController, GradientBackground {
         })))
     }
     
+    private func clearTracks(_ tracks: [Track]) -> [Track] {
+        var localTracks = tracks
+        var i = 1
+        
+        while i < localTracks.count {
+            if(localTracks[i].preview_url == nil) {
+                localTracks.remove(at: i)
+                i -= 1
+            }
+            i += 1
+        }
+        return localTracks
+    }
+    
     @IBAction func backBtnPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -271,37 +285,25 @@ extension AllViewController: UICollectionViewDelegate, UICollectionViewDataSourc
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         
-//        let section = sections[indexPath.section]
+        let section = sections[indexPath.section]
         
-//        switch section {
-//        case .newReleases:
-//            let album = newAlbums[indexPath.row]
-//            if let AlbumVC = storyboard?.instantiateViewController(identifier: "AlbumViewController") as? AlbumViewController {
-//                AlbumVC.modalPresentationStyle = .fullScreen
-//                AlbumVC.album = album
-//                AlbumVC.albumName = album.name
-//                self.present(AlbumVC, animated: true, completion: nil)
-//            }
-//        case .featuredPlaylists:
-//            let playlist = playlists[indexPath.row]
-//            if let PlaylistVC = storyboard?.instantiateViewController(identifier: "PlaylistViewController") as? PlaylistViewController {
-//                PlaylistVC.modalPresentationStyle = .fullScreen
-//                PlaylistVC.playlist = playlist
-//                PlaylistVC.playlistTitle = playlist.name
-//                self.present(PlaylistVC, animated: true, completion: nil)
-//            }
-//        case .recommendedTracks:
-//            let track = tracks[indexPath.row]
-//
-//            var trackWithAlbum: [Track] = []
-//            trackWithAlbum.append(track)
-//
-//            if let playerVC = storyboard?.instantiateViewController(identifier: "PlayerViewController") as? PlayerViewController {
-//                playerVC.startingIndex = indexPath.row
-//                playerVC.tracks = tracks
-//                present(playerVC, animated: true, completion: nil)
-//            }
-//        }
+        switch section {
+        case .newReleases:
+            _ = newAlbums[indexPath.row]
+        case .featuredPlaylists:
+            _ = playlists[indexPath.row]
+        case .recommendedTracks:
+            let track = tracks[indexPath.row]
+
+            var trackWithAlbum: [Track] = []
+            trackWithAlbum.append(track)
+
+            if let playerVC = storyboard?.instantiateViewController(identifier: "PlayerViewController") as? PlayerViewController {
+                playerVC.startingIndex = indexPath.row
+                playerVC.tracks = tracks
+                present(playerVC, animated: true, completion: nil)
+            }
+        }
     }
     
     // to have diffrent section behave differently
