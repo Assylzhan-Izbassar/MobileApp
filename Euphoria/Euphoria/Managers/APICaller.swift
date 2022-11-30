@@ -20,6 +20,47 @@ final class APICaller {
     
     private init() {}
     
+    // MARK: - Albums
+    
+    public func getAlbumDetails(for album: Album, completion: @escaping (Result<AlbumDetailsResponse, Error>) -> Void) {
+        createRequest(with: URL(string: "\(Constants.baseApiUrl)/albums/\(album.id)"), type: .GET) { request in
+            let task = URLSession.shared.dataTask(with: request ) { data, _, error in
+                guard let data = data, error == nil else {
+                    completion(.failure(APIError.failedToGetData))
+                    return
+                }
+                do {
+                    let result = try JSONDecoder().decode(AlbumDetailsResponse.self, from: data)
+                    completion(.success(result))
+                } catch {
+                    print(error.localizedDescription)
+                    completion(.failure(error))
+                }
+            }
+            task.resume()
+        }
+    }
+    
+    public func getCurrentUserAlbums(completion: @escaping (Result<[Album], Error>) -> Void) {
+        createRequest(with: URL(string: "\(Constants.baseApiUrl)/me/albums"), type: .GET) { request in
+            let task = URLSession.shared.dataTask(with: request) { data, _, error in
+                guard let data = data, error == nil else {
+                    completion(.failure(APIError.failedToGetData))
+                    return
+                }
+                do {
+                    let result = try JSONDecoder().decode(LibraryAlbumResponse.self, from: data)
+                    print(result)
+                    completion(.success(result.items.compactMap({$0.album})))
+                } catch {
+                    print(error.localizedDescription)
+                    completion(.failure(error))
+                }
+            }
+            task.resume()
+        }
+    }
+    
     public func saveAlbumToCurrentUser(album: Album, completion: @escaping (Bool) -> Void ) {
         createRequest(with: URL(string: "\(Constants.baseApiUrl)/me/albums?ids=\(album.id)"), type: .PUT) { baseRequest in
             var request = baseRequest
