@@ -2,11 +2,11 @@
 //  CollectionCellDecoration.swift
 //  Euphoria
 //
-//  Created by Assylzhan Izbassar on 04.10.2022.
+//  Created by macbook on 23.05.2021.
 //
 
 import UIKit
 
 protocol CollectionCellDecoration {
-    func makeRoundedCorners(_ cornerRadius: CGFloat?, _ shadowRadius: CGFloat?, _ offset: CGSize?)
+    func makeRoundedCorners(_ cornerRadius: CGFloat?, _ shadowRadius: CGFloat?, _ offset: CGSize?) 
 }

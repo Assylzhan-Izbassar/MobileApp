@@ -2,7 +2,7 @@
 //  GenericImage.swift
 //  Euphoria
 //
-//  Created by Assylzhan Izbassar on 04.10.2022.
+//  Created by macbook on 26.05.2021.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  Genre.swift
 //  Euphoria
 //
-//  Created by Assylzhan Izbassar on 04.10.2022.
+//  Created by Амира Байжулдинова on 14.05.2021.
 //
 
 import Foundation
@@ -30,6 +30,7 @@ struct Category: Codable {
     let icons: [GenericImage]
 }
 
+
 extension Genre {
     static func getSearchGenre() -> [Genre] {
         return [
@@ -40,3 +41,4 @@ extension Genre {
         ]
     }
 }
+

@@ -2,11 +2,10 @@
 //  MyMediaAlbumCollectionViewCell.swift
 //  Euphoria
 //
-//  Created by Anna Ogorodova on 23.10.2022.
+//  Created by macbook on 30.05.2021.
 //
 
 import UIKit
-import SDWebImage
 
 class MyMediaAlbumCollectionViewCell: UICollectionViewCell {
     static let identifier = "MyMediaAlbumCollectionViewCell"
@@ -28,4 +27,3 @@ class MyMediaAlbumCollectionViewCell: UICollectionViewCell {
         albumImg.clipsToBounds = true
     }
 }
-

@@ -2,18 +2,20 @@
 //  CustomTabBar.swift
 //  Euphoria
 //
-//  Created by Assylzhan Izbassar on 08.10.2022.
+//  Created by macbook on 22.05.2021.
 //
 
 import UIKit
 
-class CustomTabBar: UITabBar {
+/*@IBDesignable*/ class CustomTabBar: UITabBar {
     
-    var color: UIColor?
-    var radii: CGFloat = 45.0
+    /*@IBInspectable*/ var color: UIColor?
+    /*@IBInspectable*/ var radii: CGFloat = 45.0
     
     private var shapeLayer: CALayer?
 
+    // Only override draw() if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         addShape()
     }
