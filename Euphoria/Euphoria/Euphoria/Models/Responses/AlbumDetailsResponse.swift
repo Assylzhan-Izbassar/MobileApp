@@ -2,7 +2,7 @@
 //  AlbumDetailsResponse.swift
 //  Euphoria
 //
-//  Created by macbook on 27.05.2021.
+//  Created by macbook on 27.11.2022.
 //
 
 import Foundation

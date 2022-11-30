@@ -2,7 +2,7 @@
 //  SafeIndex.swift
 //  Euphoria
 //
-//  Created by macbook on 31.05.2021.
+//  Created by macbook on 31.11.2022.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  PopularCollectionViewCell.swift
 //  Euphoria
 //
-//  Created by Амира Байжулдинова on 14.05.2021.
+//  Created by Амира Байжулдинова on 14.11.2022.
 //
 
 import UIKit

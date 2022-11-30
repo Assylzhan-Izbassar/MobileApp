@@ -2,7 +2,7 @@
 //  MyMediaAlbumCollectionViewCell.swift
 //  Euphoria
 //
-//  Created by macbook on 30.05.2021.
+//  Created by macbook on 30.11.2022.
 //
 
 import UIKit

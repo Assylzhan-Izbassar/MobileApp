@@ -2,7 +2,7 @@
 //  GradientBackground.swift
 //  Euphoria
 //
-//  Created by macbook on 23.04.2021.
+//  Created by macbook on 23.11.2022.
 //
 
 import UIKit

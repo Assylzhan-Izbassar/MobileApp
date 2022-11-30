@@ -2,7 +2,7 @@
 //  SearchResultViewController.swift
 //  Euphoria
 //
-//  Created by macbook on 28.05.2021.
+//  Created by macbook on 28.11.2022.
 //
 
 import UIKit
