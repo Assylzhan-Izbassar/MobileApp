@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1182366B29547909009B0604 /* EmailNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1182366A29547909009B0604 /* EmailNotification.swift */; };
 		48B39A7D2900113D0084EE30 /* Pods_Euphoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72393E7473C8C18AA415204B /* Pods_Euphoria.framework */; };
 		FA050226266268B90080C57B /* LibraryPlaylistResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA050225266268B90080C57B /* LibraryPlaylistResponse.swift */; };
 		FA05022926626E4C0080C57B /* MyMediaHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05022826626E4C0080C57B /* MyMediaHeaderCollectionReusableView.swift */; };
@@ -84,6 +85,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1182366A29547909009B0604 /* EmailNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailNotification.swift; sourceTree = "<group>"; };
 		72393E7473C8C18AA415204B /* Pods_Euphoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euphoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D098A1155C47A84593F64C36 /* Pods-Euphoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.release.xcconfig"; path = "Target Support Files/Pods-Euphoria/Pods-Euphoria.release.xcconfig"; sourceTree = "<group>"; };
 		E209D2BAF707286E9C15AA2C /* Pods-Euphoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.debug.xcconfig"; path = "Target Support Files/Pods-Euphoria/Pods-Euphoria.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				FA050225266268B90080C57B /* LibraryPlaylistResponse.swift */,
 				FA79F73B26633F5D00A44A05 /* LibraryAlbumResponse.swift */,
 				FA890E482663D135003DFB1D /* SearchResultResponse.swift */,
+				1182366A29547909009B0604 /* EmailNotification.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 				FA6D29E92660BB5E0045BE8F /* PlaylistHeaderViewModel.swift in Sources */,
 				FA1758DC265E7E3E00DC83B0 /* FeaturedPlaylistCollectionViewCell.swift in Sources */,
 				FA79F75926637CBF00A44A05 /* AlbumCollectionViewCell.swift in Sources */,
+				1182366B29547909009B0604 /* EmailNotification.swift in Sources */,
 				FAD0F4972661450E00093FD3 /* CategoryViewController.swift in Sources */,
 				FA6CEF7226592A860041116A /* CustomTabBar.swift in Sources */,
 				FA890E492663D135003DFB1D /* SearchResultResponse.swift in Sources */,

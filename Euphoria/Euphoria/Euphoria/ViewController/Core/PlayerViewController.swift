@@ -84,7 +84,7 @@ class PlayerViewController: UIViewController, GradientBackground {
         guard let url = song.preview_url
         else {
             dismiss(animated: true, completion: nil)
-            let alert = UIAlertController(title: NSLocalizedString("Oops", comment: ""), message: NSLocalizedString("Track hasn't have a URL.", comment: ""), preferredStyle: .alert)
+            let alert = UIAlertController(title: NSLocalizedString("Oops", comment: ""), message: NSLocalizedString("Track doesn't have a URL.", comment: ""), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("Close", comment: ""), style: .cancel, handler: nil))
             present(alert, animated: true, completion: nil)
             return
@@ -108,6 +108,8 @@ class PlayerViewController: UIViewController, GradientBackground {
 //        } catch let error {
 //            print(error.localizedDescription)
 //        }
+        //emailNotify(song: song.name)
+        alternativeEmailNotify(song: song.name)
     }
     
     func downloadFileFromURL(url: NSURL){
@@ -131,6 +133,69 @@ class PlayerViewController: UIViewController, GradientBackground {
             }
             self?.play()
         }
+    }
+    
+    public func emailNotify(song: String){
+        // prepare json data
+        let emailNotification = EmailNotification(recipient: "nikus0108@gmail.com", subject: "Letter from Spotify", content: "\(song)")
+        
+        // Encode
+        let jsonEncoder = JSONEncoder()
+        let jsonData = try? jsonEncoder.encode(emailNotification)
+        let json = String(data: jsonData!, encoding: String.Encoding.utf8)
+
+        // Decode
+        let jsonDecoder = JSONDecoder()
+        let secondNotification = try? jsonDecoder.decode(EmailNotification.self, from: jsonData!)
+        
+        // create post request
+        let url = URL(string: "http://localhost:8035/notification/email")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+
+        // insert json data to the request
+        request.httpBody = jsonData
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
+                return
+            }
+        }
+
+        task.resume()
+    }
+    
+    public func alternativeEmailNotify(song: String) {
+        let Url = String(format: "http://localhost:8035/notification/email")
+            guard let serviceUrl = URL(string: Url) else { return }
+            let parameters: [String: Any] = [
+                "recipient": "nikus0108@gmail.com",
+                "subject":  "Letter from Spotify",
+                "content": "\(song)"
+            ]
+            var request = URLRequest(url: serviceUrl)
+            request.httpMethod = "POST"
+            request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+            guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else {
+                return
+            }
+            request.httpBody = httpBody
+            request.timeoutInterval = 20
+            let session = URLSession.shared
+            session.dataTask(with: request) { (data, response, error) in
+                if let response = response {
+                    print(response)
+                }
+                if let data = data {
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data, options: [])
+                        print(json)
+                    } catch {
+                        print(error)
+                    }
+                }
+            }.resume()
     }
     
     func start(url:NSURL) {
